@@ -37,3 +37,7 @@ const objectives = ["Learn a new language", "Read 52 books", "Run a marathon"];
 console.log(objectives.length);
 
 // The .push() Method
+const chores = ["wash dishes", "do laundry", "take out trash"];
+
+chores.push("cut grass", "babysit");
+console.log(chores);
