@@ -24,3 +24,25 @@ const vacationSpots = ["Bali", "Paris", "Tulum"];
 for (let i = 0; i < vacationSpots.length; i++) {
   console.log("I would love to visit " + vacationSpots[i]);
 }
+
+// Nested Loops
+const bobsFollowers = [
+  "tommiehilfiga",
+  "devtommie",
+  "threesixtyvinyl",
+  "tommie114",
+];
+
+const tinasFollowers = ["devtommie", "tommie114", "cats123"];
+
+let mutualFollowers = [];
+
+for (let bobs = 0; bobs < bobsFollowers.length; bobs++) {
+  for (let tinas = 0; tinas < tinasFollowers.length; tinas++) {
+    if (bobsFollowers[bobs] === tinasFollowers[tinas]) {
+      mutualFollowers.push(tinasFollowers[tinas]);
+    }
+  }
+}
+
+console.log(mutualFollowers);
