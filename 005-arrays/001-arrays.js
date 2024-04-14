@@ -53,3 +53,32 @@ const chores = [
 
 chores.pop();
 console.log(chores);
+
+// More Array Methods
+
+const groceryList = [
+  "orange juice",
+  "bananas",
+  "coffee beans",
+  "brown rice",
+  "pasta",
+  "coconut oil",
+  "plantains",
+];
+
+// shift() - removes first item
+groceryList.shift();
+// console.log(groceryList);
+
+// unshift() - add to beginning
+groceryList.unshift("popcorn");
+// console.log(groceryList);
+
+// slice() -- array.slice(start, end);
+groceryList.slice(-2);
+console.log(groceryList);
+
+// indexOf()
+const pastaIndex = groceryList.indexOf("pasta");
+
+console.log(pastaIndex); // 4
