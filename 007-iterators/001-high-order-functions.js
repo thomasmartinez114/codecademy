@@ -7,14 +7,18 @@ const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
   }
 };
 
+///////////////////////////////////
 // High Order Functions - Functions as Data
+///////////////////////////////////
 const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
 
 isTwoPlusTwo();
 
 console.log(isTwoPlusTwo.name);
 
+///////////////////////////////////
 // High Order Functions - Functions as Parameters
+///////////////////////////////////
 const addTwo = (num) => {
   return num + 2;
 };
