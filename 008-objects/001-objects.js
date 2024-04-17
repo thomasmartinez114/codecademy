@@ -110,3 +110,29 @@ let capFave = spaceship.crew.captain["favorite foods"][0];
 
 // Create a variable firstPassenger and assign the first passenger as its value (the element in the 0th index of the spaceship.passengers array you just made). Make sure to use bracket and dot notation to get the passenger object through nested access (don’t just copy the object into the variable!)
 let firstPassenger = spaceship.passengers[0];
+
+///////////////////////////////////
+// Pass By Reference
+///////////////////////////////////
+
+let spaceship = {
+  "Fuel Type": "Turbo Fuel",
+  homePlanet: "Earth",
+};
+
+// Write your code below
+
+//Write a function greenEnergy() that has an object as a parameter and sets that object’s 'Fuel Type' property to 'avocado oil'.
+let greenEnergy = (objectParam) => {
+  objectParam["Fuel Type"] = "avocado oil";
+};
+
+// Write a function remotelyDisable() that has an object as a parameter and sets (or reassigns) that object’s disabled property to true.
+let remotelyDisable = (objectParam) => {
+  objectParam["disabled"] = true;
+};
+
+// Call your two functions with the spaceship object in the code editor, then console.log() the spaceship object to confirm those properties were changed/added.
+greenEnergy(spaceship);
+remotelyDisable(spaceship);
+console.log(spaceship);
