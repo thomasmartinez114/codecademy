@@ -148,8 +148,25 @@ tinCan.beep();
 // You should see 'Beep Boop' printed to the console which means the factory function produced a robot object! Play around with tinCan to check the other properties!
 
 ///////////////////////////////////
-//
+// Property Value Shorthand
 ///////////////////////////////////
+
+const robotFactory = (model, mobile) => {
+  return {
+    model,
+    mobile,
+    beep() {
+      console.log("Beep Boop");
+    },
+  };
+};
+
+// To check that the property value shorthand technique worked:
+const newRobot = robotFactory("P-501", false);
+console.log(newRobot.model);
+console.log(newRobot.mobile);
+
+// 1. Use the property value shorthand and refactor the factory function in main.js
 
 ///////////////////////////////////
 //
