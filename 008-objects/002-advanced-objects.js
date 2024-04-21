@@ -190,3 +190,32 @@ functionality.beep();
 // 1. Use destructured assignment to create a const variable named functionality that extracts the functionality property of robot. If you need a reminder on how to use destructured assignment, review the example in the narrative or check the hint.
 
 // 2. Since functionality is referencing robot.functionality we can call the methods available to robot.functionality simply through functionality. Take advantage of this shortcut and call the .beep() method on functionality.
+
+///////////////////////////////////
+// Built-in Object Methods
+///////////////////////////////////
+const robot = {
+  model: "SAL-1000",
+  mobile: true,
+  sentient: false,
+  armor: "Steel-plated",
+  energyLevel: 75,
+};
+
+// What is missing in the following method call?
+const robotKeys = Object.keys(robot);
+
+console.log(robotKeys);
+
+// Declare robotEntries below this line:
+const robotEntries = Object.entries(robot);
+
+console.log(robotEntries);
+
+// Declare newRobot below this line:
+const newRobot = Object.assign(
+  { laserBlaster: true, voiceRecognition: true },
+  robot
+);
+
+console.log(newRobot);
