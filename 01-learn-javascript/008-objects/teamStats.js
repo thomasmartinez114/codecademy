@@ -97,13 +97,24 @@ team.addPlayer("Daffy", "Duck", 80)
 team.addGame("Titans", 100, 98)
 // console.log(team._games)
 // console.log(team._players)
-console.log(team._games)
+// console.log(team._games)
 
 // BONUS CHALLENGE
-// find total games played, avg points scored, avg total pts for games
+// find total games played, total team points, avg points scored,
 
-let teamPoints = 0
+let totalGamesPlayed = 0
+let totalTeamPoints = 0
+let avgGamePoints = 0
 
 for (let i = 0; i < team._games.length; i++) {
-  console.log("for loop")
+  // console.log("for loop")
+  totalGamesPlayed++
+  totalTeamPoints += team._games[i].teamPoints
 }
+
+let avgPointsScored = totalTeamPoints / totalGamesPlayed
+
+console.log(`Total Games: ${totalGamesPlayed}`)
+console.log(`Total Team Points: ${totalTeamPoints}`)
+console.log(`Avg Team Points: ${avgPointsScored}`)
+// console.log("points" + team._games[1].teamPoints)
