@@ -29,22 +29,18 @@ class Surgeon {
     this._remainingVacationDays = 20
   }
 
-  // getter that returns name
   get name() {
     return this._name
   }
 
-  // getter return department
   get department() {
     return this._department
   }
 
-  // getter _remainingVacationDays
   get remainingVacationDays() {
     return this._remainingVacationDays
   }
 
-  //
   takeVacationDays(daysOff) {
     this._remainingVacationDays -= daysOff
   }
@@ -52,3 +48,12 @@ class Surgeon {
 
 const surgeonRomero = new Surgeon("Francisco Romero", "Cardiovascular")
 const surgeonJackson = new Surgeon("Ruth Jackson", "Orthopedics")
+
+// print surgeonRomero name
+console.log(surgeonRomero.name)
+
+// Call .takeVacationDays() on surgeonRomero, with an input of 3.
+surgeonRomero.takeVacationDays(3)
+
+// After the call to .takeVacationDays(), use console.log() to print the value saved to the remainingVacationDays property of the surgeonRomero instance.
+console.log(surgeonRomero.remainingVacationDays)
